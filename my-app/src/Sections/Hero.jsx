@@ -1,10 +1,21 @@
 import React from 'react'
-import { words } from '../Constants'
 import Button from '../Components/Button'
 import thrishaImg from "../assets/thrisha.jpg";
 import {useGSAP} from '@gsap/react'
 import gsap from 'gsap';
 import Projects from '../Components/Projects';
+import Certificates from '../Components/Certificates';
+import Slider from '../Components/Slider';
+import Footer from '../Components/Footer';
+import Navbar from '../Components/Navbar';
+
+
+const words = [
+  { text: "Ideas", imgPath: "/images/ideas.svg" },
+  { text: "Concepts", imgPath: "/images/concepts.svg" },
+  { text: "Designs", imgPath: "/images/designs.svg" },
+  { text: "Code", imgPath: "/images/code.svg" },
+];
 
 const Hero = () => {
     useGSAP(()=>{
@@ -24,6 +35,7 @@ const Hero = () => {
     })
     return (
         <section id="hero" className='relative overflow-hidden'>
+            <Navbar/>
             {/* Background */}
             <div className='absolute top-0 left-0 z-10'>
                 <img src='/images/bg.png' alt='background ' />
@@ -75,6 +87,9 @@ const Hero = () => {
                 </figure>
             </div>
             <Projects/>
+            <Certificates/>
+            <Slider/>
+            <Footer/>
         </section>
     )
 }
