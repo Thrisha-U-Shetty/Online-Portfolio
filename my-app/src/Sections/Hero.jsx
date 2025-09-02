@@ -48,8 +48,8 @@ const Hero = () => {
                 <header className='flex flex-col justify-center md:w-1/2 w-full gap-7'>
                     <div className='hero-text'>
                         <h1>
-                            Shaping
-                            <span className='slide'>
+                            Shaping Ideas
+                            {/* <span className='slide'>
                                 <span className='wrapper'>
                                     {words.map((word) => (
                                         <span key={word.text} className='flex items-center md:gap-3 gap-1 pb-2'>
@@ -60,7 +60,7 @@ const Hero = () => {
                                         </span>
                                     ))}
                                 </span>
-                            </span>
+                            </span> */}
                         </h1>
                         <h1>into Real Projects</h1>
                         <h1>that Deliver Results</h1>
